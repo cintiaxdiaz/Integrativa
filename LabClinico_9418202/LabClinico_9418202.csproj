@@ -91,6 +91,7 @@
     <Compile Include="Form_UsuarioNivel_1.Designer.cs">
       <DependentUpon>Form_UsuarioNivel_1.cs</DependentUpon>
     </Compile>
+    <Compile Include="USUARIO.cs" />
     <EmbeddedResource Include="Form_CentrosMedicos.resx">
       <DependentUpon>Form_CentrosMedicos.cs</DependentUpon>
     </EmbeddedResource>

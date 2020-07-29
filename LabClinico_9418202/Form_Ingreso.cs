@@ -17,7 +17,7 @@ namespace LabClinico_9418202
         {
             InitializeComponent();
         }
-
+        MySqlConnection conex = new MySqlConnection("Server = 127.0.0.1; User=root; Database=BBDDLABORATORIOcintiadiaz;password='';");
         private void button1_Click(object sender, EventArgs e)
         {
             
