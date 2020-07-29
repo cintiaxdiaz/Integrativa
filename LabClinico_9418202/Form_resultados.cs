@@ -17,8 +17,8 @@ namespace LabClinico_9418202
         {
             InitializeComponent();
         }
-
-        private void Form_resultados_Load(object sender, EventArgs e)
+		MySqlConnection conex = new MySqlConnection("Server = 127.0.0.1; User=root; Database=BBDDLABORATORIOcintiadiaz;password='';");
+		private void Form_resultados_Load(object sender, EventArgs e)
         {
 
         }
@@ -32,5 +32,16 @@ namespace LabClinico_9418202
         {
 
         }
-    }
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			conex.Open();
+			DataTable tabla = new DataTable();
+			MySqlDataAdapter adapter = new MySqlDataAdapter("select * from resultados_cintia_diaz ", conex);
+			tabla.Clear();
+			adapter.Fill(tabla);
+			dataGridView1.DataSource = tabla;
+			conex.Close();
+		}
+	}
 }
