@@ -18,21 +18,7 @@ namespace LabClinico_9418202
             InitializeComponent();
         }
 		MySqlConnection conex = new MySqlConnection("Server = 127.0.0.1; User=root; Database=BBDDLABORATORIOcintiadiaz;password='';");
-		private void Form_resultados_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
+		
 		private void button2_Click(object sender, EventArgs e)
 		{
 			conex.Open();
