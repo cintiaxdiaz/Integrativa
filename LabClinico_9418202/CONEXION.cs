@@ -17,6 +17,31 @@ namespace LabClinico_9418202 {
         MySqlDataAdapter data_adapter;
         DataTable dt;
 
+
+        public void llenargrid_diagnosticos_cintia_diaz(DataGridView grid)
+        {
+            MySqlCommand cm = new MySqlCommand("select * from diagnosticos_cintia_diaz", conex);
+            MySqlDataAdapter da = new MySqlDataAdapter(cm);
+            DataTable diagnosticos_cintia_diaz = new DataTable();
+            da.Fill(diagnosticos_cintia_diaz);
+            grid.DataSource = diagnosticos_cintia_diaz;
+
+
+        }
+
+        public void medicos_cintia_diaz(DataGridView grid)
+        {
+            MySqlCommand cm = new MySqlCommand("select * from medicos_cintia_diaz", conex);
+            MySqlDataAdapter da = new MySqlDataAdapter(cm);
+            DataTable medicos_cintia_diaz = new DataTable();
+            da.Fill(medicos_cintia_diaz);
+            grid.DataSource = medicos_cintia_diaz;
+
+
+        }
+
+        
+
         public CONEXION() {
             try {
                 conex = new MySqlConnection("Server = 127.0.0.1; User=root; Database=BBDDLABORATORIOcintiadiaz;password='';");

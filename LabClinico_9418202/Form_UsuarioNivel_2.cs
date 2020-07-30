@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace LabClinico_9418202
 {
@@ -32,8 +33,6 @@ namespace LabClinico_9418202
                         {
                             PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
                             doc.Open();
-
-                            //doc.Add(new iTextSharp.text.Paragraph(label2.Text + "\n" + richTextBox1.Text));
                             doc.Add(new iTextSharp.text.Paragraph(label2.Text + "\n" + label3.Text + "\n" + "\n" + "\n" + label4.Text + "\n" + label5.Text + "\n" + "\n" + "\n" + label6.Text + "\n" + label7.Text + "\n" + "\n" + "\n" + label8.Text + "\n" + label9.Text + "\n" + "\n" + "\n" + label10.Text + "\n" + label11.Text + "\n" + "\n" + "\n" + label12.Text + "\n" + richTextBox1.Text));
 
                         }
@@ -64,6 +63,16 @@ namespace LabClinico_9418202
                 printDocument1.PrinterSettings = printDialog1.PrinterSettings;
                 printDocument1.Print();
             }
+        }
+
+        MySqlConnection conex = new MySqlConnection("Server = 127.0.0.1; User=root; Database=BBDDLABORATORIOcintiadiaz;password='';");
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+
+           
         }
     }
 }

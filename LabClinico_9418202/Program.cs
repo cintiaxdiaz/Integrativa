@@ -17,6 +17,8 @@ namespace LabClinico_9418202
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form_Ingreso());
+            Application.Run(new Gridview()); 
+
         }
-    }
+    } 
 }

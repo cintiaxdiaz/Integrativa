@@ -33,5 +33,21 @@ namespace LabClinico_9418202
 			conex.Close();
 
 		}
+
+        CONEXION cmda = new CONEXION();
+
+        private void Form_Medicos_Load(object sender, EventArgs e)
+        {
+
+            //cmda.llenargrid_medicos_cintia_diaz(dataGridView1);
+            conex.Open();
+            DataTable tabla_PERFILES = new DataTable();
+            MySqlDataAdapter sentencia = new MySqlDataAdapter("select * from medicos_cintia_diaz", conex);
+            tabla_PERFILES.Clear();
+            sentencia.Fill(tabla_PERFILES);
+            dataGridView1.DataSource = tabla_PERFILES;
+            conex.Close();
+
+        }
     }
 }
