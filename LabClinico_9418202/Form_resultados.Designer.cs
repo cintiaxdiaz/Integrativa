@@ -51,8 +51,8 @@
             this.cbx_d2 = new System.Windows.Forms.ComboBox();
             this.cbx_d1 = new System.Windows.Forms.ComboBox();
             this.cbx_o = new System.Windows.Forms.ComboBox();
-            this.cbx_fd = new System.Windows.Forms.ComboBox();
             this.txt_numero = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -178,6 +178,7 @@
             this.btn_ingresar.TabIndex = 22;
             this.btn_ingresar.Text = "INGRESAR";
             this.btn_ingresar.UseVisualStyleBackColor = true;
+            this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click);
             // 
             // btn_buscar_num
             // 
@@ -188,6 +189,7 @@
             this.btn_buscar_num.TabIndex = 23;
             this.btn_buscar_num.Text = "BUSCAR NUMERO";
             this.btn_buscar_num.UseVisualStyleBackColor = true;
+            this.btn_buscar_num.Click += new System.EventHandler(this.btn_buscar_num_Click);
             // 
             // btn_modificar
             // 
@@ -198,6 +200,7 @@
             this.btn_modificar.TabIndex = 24;
             this.btn_modificar.Text = "MODIFICAR";
             this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
             // btn_eliminar
             // 
@@ -208,6 +211,7 @@
             this.btn_eliminar.TabIndex = 25;
             this.btn_eliminar.Text = "ELIMINAR";
             this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // pictureBox1
             // 
@@ -280,14 +284,6 @@
             this.cbx_o.Size = new System.Drawing.Size(165, 24);
             this.cbx_o.TabIndex = 30;
             // 
-            // cbx_fd
-            // 
-            this.cbx_fd.FormattingEnabled = true;
-            this.cbx_fd.Location = new System.Drawing.Point(431, 133);
-            this.cbx_fd.Name = "cbx_fd";
-            this.cbx_fd.Size = new System.Drawing.Size(165, 24);
-            this.cbx_fd.TabIndex = 33;
-            // 
             // txt_numero
             // 
             this.txt_numero.Location = new System.Drawing.Point(20, 328);
@@ -295,14 +291,21 @@
             this.txt_numero.Size = new System.Drawing.Size(186, 22);
             this.txt_numero.TabIndex = 34;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(432, 133);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 35;
+            // 
             // Form_resultados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(842, 554);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txt_numero);
-            this.Controls.Add(this.cbx_fd);
             this.Controls.Add(this.cbx_d2);
             this.Controls.Add(this.cbx_d1);
             this.Controls.Add(this.cbx_o);
@@ -362,7 +365,7 @@
         private System.Windows.Forms.ComboBox cbx_d2;
         private System.Windows.Forms.ComboBox cbx_d1;
         private System.Windows.Forms.ComboBox cbx_o;
-        private System.Windows.Forms.ComboBox cbx_fd;
         private System.Windows.Forms.TextBox txt_numero;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
