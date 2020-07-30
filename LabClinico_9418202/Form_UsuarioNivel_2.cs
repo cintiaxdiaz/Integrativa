@@ -26,13 +26,16 @@ namespace LabClinico_9418202
             {
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    iTextSharp.text.Document doc = new iTextSharp.text.Document(PageSize.LEGAL.Rotate());
+                    iTextSharp.text.Document doc = new iTextSharp.text.Document(PageSize.LETTER);
                     {
                         try
                         {
                             PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
                             doc.Open();
-                            doc.Add(new iTextSharp.text.Paragraph(richTextBox1.Text));
+
+                            //doc.Add(new iTextSharp.text.Paragraph(label2.Text + "\n" + richTextBox1.Text));
+                            doc.Add(new iTextSharp.text.Paragraph(label2.Text + "\n" + label3.Text + "\n" + "\n" + "\n" + label4.Text + "\n" + label5.Text + "\n" + "\n" + "\n" + label6.Text + "\n" + label7.Text + "\n" + "\n" + "\n" + label8.Text + "\n" + label9.Text + "\n" + "\n" + "\n" + label10.Text + "\n" + label11.Text + "\n" + "\n" + "\n" + label12.Text + "\n" + richTextBox1.Text));
+
                         }
                         catch (Exception ex)
                         {
@@ -49,8 +52,9 @@ namespace LabClinico_9418202
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString(richTextBox1.Text, richTextBox1.Font, Brushes.Black, 100,100);
-            e.Graphics.DrawImage(pictureBox2.Image, 100, 500, pictureBox2.Width, pictureBox2.Height);
+
+            e.Graphics.DrawImage(pictureBox2.Image, 600, 100, pictureBox2.Width, pictureBox2.Height);
+            e.Graphics.DrawString(label2.Text + "\n" + label3.Text + "\n" + "\n" + "\n" + label4.Text + "\n" + label5.Text + "\n" + "\n" + "\n" + label6.Text + "\n" + label7.Text + "\n" + "\n" + "\n" + label8.Text + "\n" + label9.Text + "\n" + "\n" + "\n" + label10.Text + "\n" + label11.Text + "\n" + "\n" + "\n" + label12.Text + "\n" + richTextBox1.Text, richTextBox1.Font, Brushes.Black, 10,150);
         }
 
         private void button2_Click(object sender, EventArgs e)

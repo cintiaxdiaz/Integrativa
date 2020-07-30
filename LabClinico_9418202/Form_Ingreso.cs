@@ -89,5 +89,11 @@ namespace LabClinico_9418202
 
 			
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form_UsuarioNivel_2 Form_UsuarioNivel_2 = new Form_UsuarioNivel_2();
+            Form_UsuarioNivel_2.Show();
+        }
     }
 }
