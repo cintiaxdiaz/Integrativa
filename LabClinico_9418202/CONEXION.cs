@@ -174,6 +174,26 @@ namespace LabClinico_9418202 {
                 conex.Close();
             }
         }
+        /*
+          DataTable tabla_PERFILES = new DataTable();
+			MySqlDataAdapter sentencia = new MySqlDataAdapter("select * from medicos_cintia_diaz where codmed like '%" + textBox1.Text + "%'", conex);
+			tabla_PERFILES.Clear();
+			sentencia.Fill(tabla_PERFILES);
+			dataGridView1.DataSource = tabla_PERFILES;
+			conex.Close();
+         */
+
+        public void CargarTablaMedicos(DataGridView dgv, TextBox txt) {
+            try {
+                data_adapter = new MySqlDataAdapter("select * from medicos_cintia_diaz where codmed like '%" + txt.Text + "%'", conex);
+                dt = new DataTable();
+                data_adapter.Fill(dt);
+                dgv.DataSource = dt;
+            }
+            catch (Exception ex) {
+                MessageBox.Show("Error al consultar tabla: " + ex.ToString());
+            }
+        }
 
         public void llenar_diag(ComboBox cbx) {
             try {
