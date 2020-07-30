@@ -22,5 +22,10 @@ namespace LabClinico_9418202
         {
 
         }
-    }
+
+		private void Form_Pacientes_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
