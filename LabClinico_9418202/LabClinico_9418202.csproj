@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CONEXION.cs" />
     <Compile Include="Form_CentrosMedicos.cs">
       <SubType>Form</SubType>
     </Compile>
