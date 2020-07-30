@@ -39,20 +39,20 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_ingresar = new System.Windows.Forms.Button();
+            this.btn_buscar_num = new System.Windows.Forms.Button();
+            this.btn_modificar = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbx_rut = new System.Windows.Forms.ComboBox();
+            this.cbx_t = new System.Windows.Forms.ComboBox();
+            this.cbx_m = new System.Windows.Forms.ComboBox();
+            this.cbx_d2 = new System.Windows.Forms.ComboBox();
+            this.cbx_d1 = new System.Windows.Forms.ComboBox();
+            this.cbx_o = new System.Windows.Forms.ComboBox();
+            this.cbx_fd = new System.Windows.Forms.ComboBox();
+            this.txt_numero = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -143,7 +143,7 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(19, 362);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(808, 177);
             this.dataGridView1.TabIndex = 19;
@@ -169,51 +169,51 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "REGISTROS";
             // 
-            // button1
+            // btn_ingresar
             // 
-            this.button1.Location = new System.Drawing.Point(20, 267);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 28);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "INGRESAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_ingresar.Location = new System.Drawing.Point(20, 267);
+            this.btn_ingresar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ingresar.Name = "btn_ingresar";
+            this.btn_ingresar.Size = new System.Drawing.Size(186, 28);
+            this.btn_ingresar.TabIndex = 22;
+            this.btn_ingresar.Text = "INGRESAR";
+            this.btn_ingresar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_buscar_num
             // 
-            this.button2.Location = new System.Drawing.Point(226, 326);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 28);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "BUSCAR NUMERO";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_buscar_num.Location = new System.Drawing.Point(226, 326);
+            this.btn_buscar_num.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_buscar_num.Name = "btn_buscar_num";
+            this.btn_buscar_num.Size = new System.Drawing.Size(186, 28);
+            this.btn_buscar_num.TabIndex = 23;
+            this.btn_buscar_num.Text = "BUSCAR NUMERO";
+            this.btn_buscar_num.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_modificar
             // 
-            this.button3.Location = new System.Drawing.Point(226, 267);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(186, 28);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "MODIFICAR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_modificar.Location = new System.Drawing.Point(226, 267);
+            this.btn_modificar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(186, 28);
+            this.btn_modificar.TabIndex = 24;
+            this.btn_modificar.Text = "MODIFICAR";
+            this.btn_modificar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_eliminar
             // 
-            this.button4.Location = new System.Drawing.Point(431, 267);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 28);
-            this.button4.TabIndex = 25;
-            this.button4.Text = "ELIMINAR";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Location = new System.Drawing.Point(431, 267);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(186, 28);
+            this.btn_eliminar.TabIndex = 25;
+            this.btn_eliminar.Text = "ELIMINAR";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LabClinico_9418202.Properties.Resources.ingreso_registro;
             this.pictureBox1.Location = new System.Drawing.Point(19, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(85, 76);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -225,75 +225,75 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::LabClinico_9418202.Properties.Resources.LOGO1;
             this.pictureBox2.Location = new System.Drawing.Point(676, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(151, 55);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 26;
             this.pictureBox2.TabStop = false;
             // 
-            // comboBox1
+            // cbx_rut
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(20, 133);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 24);
-            this.comboBox1.TabIndex = 27;
+            this.cbx_rut.FormattingEnabled = true;
+            this.cbx_rut.Location = new System.Drawing.Point(20, 133);
+            this.cbx_rut.Name = "cbx_rut";
+            this.cbx_rut.Size = new System.Drawing.Size(165, 24);
+            this.cbx_rut.TabIndex = 27;
             // 
-            // comboBox2
+            // cbx_t
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(20, 183);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(165, 24);
-            this.comboBox2.TabIndex = 28;
+            this.cbx_t.FormattingEnabled = true;
+            this.cbx_t.Location = new System.Drawing.Point(20, 183);
+            this.cbx_t.Name = "cbx_t";
+            this.cbx_t.Size = new System.Drawing.Size(165, 24);
+            this.cbx_t.TabIndex = 28;
             // 
-            // comboBox3
+            // cbx_m
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(20, 233);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(165, 24);
-            this.comboBox3.TabIndex = 29;
+            this.cbx_m.FormattingEnabled = true;
+            this.cbx_m.Location = new System.Drawing.Point(20, 233);
+            this.cbx_m.Name = "cbx_m";
+            this.cbx_m.Size = new System.Drawing.Size(165, 24);
+            this.cbx_m.TabIndex = 29;
             // 
-            // comboBox4
+            // cbx_d2
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(226, 232);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(165, 24);
-            this.comboBox4.TabIndex = 32;
+            this.cbx_d2.FormattingEnabled = true;
+            this.cbx_d2.Location = new System.Drawing.Point(226, 232);
+            this.cbx_d2.Name = "cbx_d2";
+            this.cbx_d2.Size = new System.Drawing.Size(165, 24);
+            this.cbx_d2.TabIndex = 32;
             // 
-            // comboBox5
+            // cbx_d1
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(226, 182);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(165, 24);
-            this.comboBox5.TabIndex = 31;
+            this.cbx_d1.FormattingEnabled = true;
+            this.cbx_d1.Location = new System.Drawing.Point(226, 182);
+            this.cbx_d1.Name = "cbx_d1";
+            this.cbx_d1.Size = new System.Drawing.Size(165, 24);
+            this.cbx_d1.TabIndex = 31;
             // 
-            // comboBox6
+            // cbx_o
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(226, 132);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(165, 24);
-            this.comboBox6.TabIndex = 30;
+            this.cbx_o.FormattingEnabled = true;
+            this.cbx_o.Location = new System.Drawing.Point(226, 132);
+            this.cbx_o.Name = "cbx_o";
+            this.cbx_o.Size = new System.Drawing.Size(165, 24);
+            this.cbx_o.TabIndex = 30;
             // 
-            // comboBox9
+            // cbx_fd
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(431, 133);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(165, 24);
-            this.comboBox9.TabIndex = 33;
+            this.cbx_fd.FormattingEnabled = true;
+            this.cbx_fd.Location = new System.Drawing.Point(431, 133);
+            this.cbx_fd.Name = "cbx_fd";
+            this.cbx_fd.Size = new System.Drawing.Size(165, 24);
+            this.cbx_fd.TabIndex = 33;
             // 
-            // textBox1
+            // txt_numero
             // 
-            this.textBox1.Location = new System.Drawing.Point(20, 328);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 22);
-            this.textBox1.TabIndex = 34;
+            this.txt_numero.Location = new System.Drawing.Point(20, 328);
+            this.txt_numero.Name = "txt_numero";
+            this.txt_numero.Size = new System.Drawing.Size(186, 22);
+            this.txt_numero.TabIndex = 34;
             // 
             // Form_resultados
             // 
@@ -301,19 +301,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(842, 554);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox9);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txt_numero);
+            this.Controls.Add(this.cbx_fd);
+            this.Controls.Add(this.cbx_d2);
+            this.Controls.Add(this.cbx_d1);
+            this.Controls.Add(this.cbx_o);
+            this.Controls.Add(this.cbx_m);
+            this.Controls.Add(this.cbx_t);
+            this.Controls.Add(this.cbx_rut);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_eliminar);
+            this.Controls.Add(this.btn_modificar);
+            this.Controls.Add(this.btn_buscar_num);
+            this.Controls.Add(this.btn_ingresar);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dataGridView1);
@@ -326,8 +326,9 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_resultados";
+            this.Load += new System.EventHandler(this.Form_resultados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -350,18 +351,18 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_ingresar;
+        private System.Windows.Forms.Button btn_buscar_num;
+        private System.Windows.Forms.Button btn_modificar;
+        private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbx_rut;
+        private System.Windows.Forms.ComboBox cbx_t;
+        private System.Windows.Forms.ComboBox cbx_m;
+        private System.Windows.Forms.ComboBox cbx_d2;
+        private System.Windows.Forms.ComboBox cbx_d1;
+        private System.Windows.Forms.ComboBox cbx_o;
+        private System.Windows.Forms.ComboBox cbx_fd;
+        private System.Windows.Forms.TextBox txt_numero;
     }
 }

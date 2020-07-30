@@ -28,7 +28,26 @@ namespace LabClinico_9418202 {
             }
         }
 
-        public string insertarDatos(string rut, int edad, string fecha_diag, string diag1, string diag2, string origen, string cod_med, string cod_tec) {
+        public void conectar() {
+            try {
+                conex = new MySqlConnection("Server = 127.0.0.1; User=root; Database=BBDDLABORATORIOcintiadiaz;password='';");
+                conex.Open();
+            }
+            catch (Exception ex) {
+                MessageBox.Show("No se conecto a los registros: " + ex.ToString());
+            }
+        }
+
+        public void desconectar() {
+            try {
+                conex.Close();
+            }
+            catch (Exception) {
+                throw;
+            }
+        }
+
+        public string insertarDatos(string rut , int edad, string fecha_diag, string diag1, string diag2, string origen, string cod_med, string cod_tec) {
             string salida = "Se registro exitosamente";
             try {
                 comando = new MySqlCommand("insert into resultados_cintia_diaz(rut, edad, feachadiag, diagnostico1, diagnostico2, origen, codmedico, codtecnologo) values ('" + rut + "'," + edad + ",'" + fecha_diag + "','" + diag1 + "','" + diag2 + "','" + cod_med + "','" + cod_tec + "')", conex);
@@ -151,7 +170,7 @@ namespace LabClinico_9418202 {
                 comando = new MySqlCommand("Select * from resultados_cintia_diaz where num=" + numero + "", conex);
                 data_reader = comando.ExecuteReader();
                 if (data_reader.Read()) {
-
+                    
                 }
                 data_reader.Close();
             }
